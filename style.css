@@ -1,0 +1,62 @@
+:root {
+    --neoblue: #78DFF2;
+    --neogreen: #B2F7EF;
+    --neowhite: #EFF7F5;
+    --neopeach: #F7D8E0;
+    --neopink:#F2B5D4;
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--neopeach);
+}
+
+section {
+    
+}
+
+header {
+    background: var(--neogreen);
+    text-decoration: none;
+}
+
+header a{
+    color: black;
+}
+
+footer {
+
+}
+
+.About {
+
+}
+
+.Consultation{
+
+}
+
+.Insurance{
+
+}
+
+.Pre{
+
+}
+
+.Finance{
+
+}
+
+.Post{
+
+}
+
+.Contact{
+
+}

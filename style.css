@@ -1,7 +1,10 @@
+
 :root {
     --neoblue: #78DFF2;
-    --neogreen: #B2F7EF;
+    --neogreen: #83D7CA;
+    --darkwhite: #B2F7EF;
     --neowhite: #EFF7F5;
+    --darkpeach: #E4B2C0;
     --neopeach: #F7D8E0;
     --neopink:#F2B5D4;
 }
@@ -10,5 +13,224 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Doppio One', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3vh;
+}
+
+body {
+    background-color: var(--neopeach);
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    background-color: var(--neogreen);
+    padding: 3vh;
+    height: 9vh;
+    /* position: fixed; */
+    
+    
+}
+
+.header a{
+    color: var(--neowhite);
+    font-size: 3vh;
+    padding: 3vh;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.Acerca {
+    height: 91vh;
+    background-color: var(--neowhite);
+
+    
+}
+
+.Acerca h1 {
+    background: var(--neogreen);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--neogreen);
+
+}
+
+.Acerca h2 {
+    font-size: 6vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+.Consulta{
+    height: 81vh;
+}
+
+.Consulta h1 {
+    background: var(--darkpeach);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--darkpeach);
+}
+
+.Consulta h2 {
+    font-size: 6vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+.Seguro {
+    height: 81vh;
+    background-color: var(--neowhite);
+}
+
+.Seguro h1 {
+    background: var(--neogreen);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--neogreen);
+}
+
+.Seguro h2 {
+    font-size: 6vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+.Preoperativo{
+    height: 81vh;
+}
+
+.Preoperativo h1 {
+    background: var(--darkpeach);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--darkpeach);
+}
+
+.Preoperativo h2 {
+    font-size: 6vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+.Finanzas{
+    height: 81vh;
+    background-color: var(--neowhite);
+}
+
+.Finanzas h1 {
+    background: var(--neogreen);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--neogreen);
+}
+
+.Finanzas h2 {
+    font-size: 6vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+.Post{
+    height: 81vh;
+}
+
+.Post h1 {
+    background: var(--darkpeach);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--darkpeach);
+}
+
+.Post h2 {
+    font-size: 6vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+.Contacto{
+    height: 81vh;
+    background-color: var(--neowhite);
+}
+
+.Contacto h1 {
+    background: var(--neogreen);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--neogreen);
+}
+
+.Contacto h2 {
+    font-size: 6vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+
+
+
 

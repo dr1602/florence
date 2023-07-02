@@ -1,7 +1,10 @@
+
 :root {
     --neoblue: #78DFF2;
-    --neogreen: #B2F7EF;
+    --neogreen: #83D7CA;
+    --darkwhite: #B2F7EF;
     --neowhite: #EFF7F5;
+    --darkpeach: #E4B2C0;
     --neopeach: #F7D8E0;
     --neopink:#F2B5D4;
 }
@@ -10,53 +13,463 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Doppio One', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 html {
-    background: var(--neopeach);
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
 }
 
 section {
+    padding: 3vh;
+}
+
+body {
+    background-color: var(--neopeach);
+}
+
+.grid-container {
+    margin-top: 2vh;
+    height: 69vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    background-color: var(--neogreen);
+    padding: 3vh;
+    height: 9vh;
+    /* position: fixed; */
     
 }
 
-header {
+.header .logo {
+    font-size: 2.1rem;
+    color: var(--neowhite);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    min-width: 5vh;
+    display: flex;
+}
+
+.header .navbar {
+    margin-top: -4.5vh;
+}
+
+.header .navbar a {
+    font-size: 3vh;
+    color: var(--neowhite);
+    margin-left: 2rem; /* 32 px */
+    padding-left: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);   
+}
+
+.Acerca {
+    height: 91vh;
+    background-color: var(--neowhite);
+
+    
+}
+
+.Acerca h1 {
     background: var(--neogreen);
-    text-decoration: none;
-}
-
-header a{
-    color: black;
-}
-
-footer {
-
-}
-
-.About {
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--neogreen);
 
 }
 
-.Consultation{
+.Acerca h2 {
+    color: var(--neogreen);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);   
+    font-size: 6vh;
+    text-align: center;
+    margin: 3vh;
 
 }
 
-.Insurance{
+.Acerca p {
+    font-size: 3vh;
+    margin: 3vh;
+    line-height: 6vh;
+}
+
+.Acerca .grid-item {
+    border: .5vh solid var(--neogreen);
+    border-radius: 3vh;
+    height: 69vh;
+}
+
+.Acerca .grid-item:nth-child(2) {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.Acerca .grid-item img {
+    width: 90%; /* Make the image fill the width of the container */
+    height: 90%; /* Make the image fill the height of the container */
+    border-radius: 3vh;
+    object-fit: cover;
+}
+
+.Consulta{
+    height: 91vh;
+}
+
+.Consulta h1 {
+    background: var(--darkpeach);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--darkpeach);
+}
+
+.Consulta h2 {
+    color: var(--neowhite);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    font-size: 6vh;
+    text-align: center;
+    margin: 3vh;
 
 }
 
-.Pre{
+.Consulta ul {
+    font-size: 3vh;
+    line-height: 6vh;
+    text-align: left;
+    margin: 3vh;
+    list-style: none;
+}
+
+.Consulta .grid-item {
+    border: .5vh solid var(--darkpeach);
+    border-radius: 3vh;
+    height: 69vh;
+}
+
+.Consulta .grid-item:nth-child(1) {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.Consulta .grid-item img {
+    width: 90%; /* Make the image fill the width of the container */
+    height: 90%; /* Make the image fill the height of the container */
+    border-radius: 3vh;
+    object-fit: cover;
+}
+
+.Seguro {
+    height: 91vh;
+    background-color: var(--neowhite);
+}
+
+.Seguro h1 {
+    background: var(--neogreen);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--neogreen);
+}
+
+.Seguro h2 {
+    color: var(--neogreen);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);   
+    font-size: 6vh;
+    text-align: center;
+    margin: 3vh;
 
 }
 
-.Finance{
+.Seguro p {
+    font-size: 3vh;
+    margin: 3vh;
+    line-height: 6vh;
+}
 
+.Seguro .grid-item {
+    border: .5vh solid var(--neogreen);
+    border-radius: 3vh;
+    height: 69vh;
+}
+
+.Seguro .grid-item:nth-child(2) {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.Seguro .grid-item img {
+    width: 90%; /* Make the image fill the width of the container */
+    height: 90%; /* Make the image fill the height of the container */
+    border-radius: 3vh;
+    object-fit: cover;
+}
+
+.Preoperativo{
+    height: 91vh;
+}
+
+.Preoperativo h1 {
+    background: var(--darkpeach);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--darkpeach);
+}
+
+.Preoperativo h2 {
+    color: var(--neowhite);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); 
+    font-size: 6vh;
+    text-align: center;
+    margin: 3vh;
+}
+
+.Preoperativo p {
+    font-size: 3vh;
+    margin: 3vh;
+    line-height: 6vh;
+}
+
+.Preoperativo .grid-item {
+    border: .5vh solid var(--darkpeach);
+    border-radius: 3vh;
+    height: 69vh;
+}
+
+.Preoperativo .grid-item:nth-child(1) {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.Preoperativo .grid-item img {
+    width: 90%; /* Make the image fill the width of the container */
+    height: 90%; /* Make the image fill the height of the container */
+    border-radius: 3vh;
+    object-fit: cover;
+}
+
+.Finanzas{
+    height: 91vh;
+    background-color: var(--neowhite);
+}
+
+.Finanzas h1 {
+    background: var(--neogreen);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--neogreen);
+}
+
+.Finanzas h2 {
+    color: var(--neogreen);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);   
+    font-size: 6vh;
+    text-align: center;
+    margin: 3vh;
+
+}
+
+.Finanzas ul {
+    font-size: 3vh;
+    line-height: 6vh;
+    text-align: left;
+    margin: 3vh;
+    list-style: none;
+}
+
+
+.Finanzas .grid-item {
+    border: .5vh solid var(--neogreen);
+    border-radius: 3vh;
+    height: 69vh;
+}
+
+.Finanzas .grid-item:nth-child(2) {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.Finanzas .grid-item img {
+    width: 90%; /* Make the image fill the width of the container */
+    height: 90%; /* Make the image fill the height of the container */
+    border-radius: 3vh;
+    object-fit: cover;
 }
 
 .Post{
+    height: 91vh;
+}
+
+.Post h1 {
+    background: var(--darkpeach);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--darkpeach);
+}
+
+.Post h2 {
+    color: var(--neowhite);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); 
+    font-size: 6vh;
+    text-align: center;
+    margin: 3vh;
 
 }
 
-.Contact{
+.Post p {
+    font-size: 3vh;
+    margin: 3vh;
+    line-height: 6vh;
+}
 
+.Post .grid-item {
+    border: .5vh solid var(--darkpeach);
+    border-radius: 3vh;
+    height: 69vh;
+}
+
+.Post .grid-item:nth-child(1) {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.Post .grid-item img {
+    width: 90%; /* Make the image fill the width of the container */
+    height: 90%; /* Make the image fill the height of the container */
+    border-radius: 3vh;
+    object-fit: cover;
+}
+
+.Contacto{
+    height: 91vh;
+    background-color: var(--neowhite);
+}
+
+.Contacto h1 {
+    background: var(--neogreen);
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: 3px solid;
+    border-radius: 1vh;
+    border-color: var(--neogreen);
+}
+
+.Contacto h2 {
+    color: var(--neogreen);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);    
+    font-size: 6vh;
+    text-align: center;
+    margin: 3vh;
+
+}
+
+.Contacto p {
+    font-size: 3vh;
+    margin: 3vh;
+    line-height: 6vh;
+    text-align: center;
+}
+
+.Contacto .grid-item {
+    border: .5vh solid var(--neogreen);
+    border-radius: 3vh;
+    height: 69vh;
+    padding-top: 3vh;
+}
+
+.Contacto .grid-item:nth-child(2) {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.Contacto .grid-item img {
+    width: 90%; /* Make the image fill the width of the container */
+    height: 90%; /* Make the image fill the height of the container */
+    border-radius: 3vh;
+    object-fit: cover;
+}
+
+
+.Contacto .mc-field-group {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Contacto .mc-field-group input {
+    border: solid var(--neopink);
+    border-radius: 3vh;
+    padding: 2vh 11vh 2vh 11vh;
+}
+
+
+.Contacto .optionalParent {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0vh;
+}
+
+
+.Contacto .optionalParent input {
+    padding: 2vh 22vh 2vh 22vh;
+    display: flex;
+    justify-content: center;
+    background: var(--neopeach);
+    border: solid var(--neopink);
+    border-radius: 3vh;
+    cursor: pointer;
 }

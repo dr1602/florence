@@ -1,2 +1,2 @@
-# florence
-Repository for a landing page of health technology startup
+# health-app
+ihealth protype landing page &amp; product prototype
